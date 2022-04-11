@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h3>Contact Form</h3>
+    <hr/>
+    <form method="post" action="{% url 'user' %}">
+        {% if messages %}
+            {% for msg in messages %}
+            <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+        {% csrf_token %}
+        <table   cellpadding="5">
+            <tr>
+                <th>Full Name</th>
+                <td><input type="text" name="full_name" /></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>
+                    <textarea name="message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit" /></td>
+            </tr>
+        </table>
+    </form>
+</body>

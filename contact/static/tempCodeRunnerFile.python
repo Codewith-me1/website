@@ -1,0 +1,12 @@
+a = {
+    "fast": "tej",
+    "slow" : "dhera",
+    "marks" : 100,
+}
+print(a["marks"])
+print(a["marks"])
+a["marks"] = [200]
+print(a["marks"])
+print(a.keys())
+print(a.values())
+print(list(a.keys()))

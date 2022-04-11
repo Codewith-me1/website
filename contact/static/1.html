@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+ rel="stylesheet">
+ <style>
+     @import'utilities.css';
+
+
+:root{
+    --primrary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --terenary:#898989;
+    --light:#F2F2F2;
+
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ 
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 300px;
+   
+}
+
+header{
+    background-color:var(--dark) ;
+  height: 800px;
+  
+
+}
+   header nav  .left a{
+    color: var(--pure);
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+header nav  .left a:hover{
+    color: var(--primrary);
+    transition: all .3s;
+
+}
+.flex{
+    display: flex;
+}
+.right{
+    display: flex;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+header nav {
+    padding: 2rem 0;
+
+}
+header nav .brand{
+    margin-right: 3rem;
+}
+        
+p{
+    color: #F2F2F2;
+}
+nav{
+    border:  2px solid var(--primrary);
+}
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+  padding: 0.8rem 3em;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+ cursor: pointer;
+}
+ 
+
+.btn-primary{
+    background-color: var(--primrary);
+    color: var(--secondary);
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+ </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+        <nav class="flex items-center justify-between">
+
+        
+
+        <div class="left flex items-center">
+
+        <div class="brand"><img src="Gmail_Icon_(2013-2020).png" width="40px"></div>
+     
+            <a href="#" class="" id="">home</a>
+            <a href="#" class="" id="">about</a>
+            <a href="#" class="" id="">services</a>
+            <a href="#" class="" id="">blog</a>
+        </div>
+        <div class="right">
+            <button class="btn btn-primary"> contact</button>
+        </div>
+    </div>
+    <p> hi</p>
+</nav>
+    </header>
+</body>
+</html>

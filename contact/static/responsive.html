@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media all and (max-width:1290px)and (min-width:1000px){
+            #box ul li a::after{
+                content: attr(data-email);
+                color: rgb(219, 219, 224);
+                background-color: darkblue;
+            }
+        }
+        @media all and (min-width:500px) and (max-width:1000px){
+            #box ul  li a::after{
+                content:"email:";
+                color: black;
+                font-style: italic;
+
+            }
+        }
+        @media all and (max-width:500px),(max-width:2000px)and(min-width:1300px){
+            #box ul li a::after{
+                padding: 20px;
+                background-image: url(lll.png) left center;
+            }
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+<div id="box">
+    <ul id="nav">
+<li> dev<a data-email="devshandilaya1@gmail.com" href="https://mail.google.com/">neha</a></li>
+<li> hi<a data-email="emperor62563@gmail.com" href="https://mail.google.com/">nehfvbhjha</a></li>
+<li> man <a data-email="programmer62563@gmail.com" href="https://mail.google.com">man</a></li>
+</ul>
+</div>
+
+    </div>
+</body>
+</html>
